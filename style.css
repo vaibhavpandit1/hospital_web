@@ -1,0 +1,110 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    
+}
+/* navbar start */
+#navbarNav  {
+    justify-content: center;
+    font-size: 21px;
+    font-weight: bold;
+    color: rgb(61, 56, 56);
+}
+/* navbaar end */
+.fm{
+    font-family: 'Protest Revolution', sans-serif;
+    color: blue
+    }
+ /* slider start */
+
+
+
+.carousel-item{
+    position: relative;
+}
+.carousel-item .carousel-caption {
+    position: absolute;
+    top: 15%;
+}
+.carousel-caption .slider_heading{
+    font-size: 75px;
+    word-spacing: 5px;
+    color: white !important;
+}
+.carousel-caption button{
+    font-size: 25px;
+    padding: 15px;
+}
+
+/* slider end */
+/* about us */
+.about_us{
+    /* margin-top: px; */
+    z-index: 99;
+    width: 100%;
+    /* height: 600px; */
+}
+.about_heading{
+    font-size: 50px !important;
+    font-weight: bolder;
+    padding: 50px !important;
+    /* text-align: center !important; */
+    /* text-align: center; */
+}
+.about_head{
+    text-align: center; 
+}
+/* about us end */
+
+@media (max-width:800px ) {
+    .slider_heading{
+        font-size: 30px; 
+        word-spacing: 5px;
+        color: white !important;
+    }
+
+   
+    
+    .carousel-item{
+        position: relative;
+    }
+    .carousel-item .carousel-caption {
+        position: absolute;
+        top: 5%;
+
+    }
+    .carousel-caption .slider_heading{
+        font-size: 30px;
+    }
+    .carousel-caption button{
+        font-size: 15px;
+        padding: 5px;
+        margin: 0px;
+    }
+    /* about us start */
+
+    .about_us{
+        z-index: 99;
+        width: 100%;
+        /* padding: 50px; */
+    }
+    .about_us img{
+        /* height: 10%; */
+    }
+    .about_heading{
+        font-size: 30px !important;
+        font-weight: bolder;
+        padding: 30px !important;
+    }
+    .about_head{
+        text-align: center; 
+    }
+    .justify{
+        font-size: 20px;
+    }
+    /* about us end */
+    
+
+
+}
+
