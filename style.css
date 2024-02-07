@@ -56,7 +56,61 @@
     text-align: center; 
 }
 /* about us end */
+.foot ul{
+    width: 100%;
+    text-align: center;
+    /* display: inline-block; */
+}
+.foot ul li{
+    /* width: 100%; */
+    width: 10%;
+    padding: 10px;
+    display: inline-block;
+    font-size: 25px;
+    gap: 20px;
 
+}
+.foot ul li a{
+    color: black !important;
+
+
+}
+
+/*  */
+.about_btns ul{
+    width: 100%;
+    text-align: center;
+
+}
+.about_btns ul li{
+    /* width: 100%; */
+    width: 20%;
+    padding: 20px;
+    display: inline-block;
+    font-size: 20px;
+    gap: 20px;
+
+}
+.about_btns ul li button{
+    color: black !important;
+    /* background: orange; */
+    background: white;
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+}
+.about_btns ul li button:hover{
+    color: black !important;
+    background: orange;
+    padding: 10px;
+    border-radius: 10px;
+}
+/*  */
+.about{
+    background-image: url(assets/teams/bg-12-copyright.jpg);
+    background-size: 100% 100%;
+}
 @media (max-width:800px ) {
     .slider_heading{
         font-size: 30px; 
@@ -103,7 +157,38 @@
     .justify{
         font-size: 20px;
     }
+    .about_btns ul{
+        width: 100%;
+        text-align: center;
+    
+    }
+    .about_btns ul li{
+        /* width: 100%; */
+        width: 20%;
+        padding: 10px;
+        display: inline-block;
+        font-size: 10px;
+        gap: 20px;
+    
+    }
+    .about_btns ul li button{
+        color: black !important;
+        /* background: orange; */
+        background: white;
+        padding: 10px;
+        font-weight: bold;
+        border: none;
+        border-radius: 10px;
+    }
+    .about_btns ul li button:hover{
+        color: black !important;
+        background: orange;
+        padding: 10px;
+        border-radius: 10px;
+    }
     /* about us end */
+
+
     
 
 
