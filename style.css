@@ -111,6 +111,30 @@
     background-image: url(assets/teams/bg-12-copyright.jpg);
     background-size: 100% 100%;
 }
+
+/* blog start */
+.card{
+    border: none;
+    text-align: center;
+
+}
+.blog_card{
+    position: relative;
+    border: none !important; 
+    margin-top: 5px;
+    height: 100%;
+    width: 100%;
+}
+.blog_card span{
+    position: absolute;
+    padding: 5px;
+    top: 8%;
+    left: 5%;
+}
+.blog_card img{
+    filter: zoom-in;
+}
+
 @media (max-width:800px ) {
     .slider_heading{
         font-size: 30px; 
@@ -204,6 +228,29 @@
         color: black !important;
     
     
+    }
+
+    /* blog start */
+    .card{
+        border: none;
+        text-align: center;
+    
+    }
+    .blog_card{
+        position: relative;
+        border: none !important; 
+        margin-top: 5px;
+        height: 100%;
+        width: 100%;
+    }
+    .blog_card span{
+        position: absolute;
+        top: 8%;
+        padding: 2px;
+        left: 3%;
+    }
+    .blog_card img{
+        filter: zoom-in;
     }
 
 
