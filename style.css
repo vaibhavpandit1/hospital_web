@@ -1,6 +1,7 @@
 *{
     padding: 0px;
     margin: 0px;
+    overflow-x: hidden;
     
 }
 /* navbar start */
@@ -136,6 +137,11 @@
 }
 
 @media (max-width:800px ) {
+    *{
+        margin:0px;
+        padding: 0px;
+    }
+   
     .slider_heading{
         font-size: 30px; 
         word-spacing: 5px;
