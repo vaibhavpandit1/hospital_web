@@ -33,7 +33,7 @@
                     <span class="fs-5 text-light-50">Pathwell-We are Always Here!</span>
                    </center>
                 </div>
-                <div class="col-md-8   bg-body-tertiary">
+                <div class="col-md-8  d-none d-md-block  bg-body-tertiary">
                     <center>
                         <div class="row">
                             <div class="col-md-6 text-md-center text-lg-end text-xl-end">
@@ -121,18 +121,18 @@
         </div>
       </div> -->
       <!--  -->
-      <div class="container-fluid bg-info  mb-5" style="margin-top: 90px;">
+      <div class="container-fluid bg-body-secondary  mb-5" style="margin-top: 90px;">
     <div class="container">
         <div class="row gx-5">
             <div class="col-lg-6 py-5">
                 <div class="py-5">
-                    <h1 class="  text-white mb-4">We Are A Certified and Award Winning Multipsesilist Hospital You Can Trust</h1>
-                    <p class="text-white mb-0">Eirmod sed tempor lorem ut dolores. Aliquyam sit sadipscing kasd ipsum. Dolor ea et dolore et at sea ea at dolor, justo ipsum duo rebum sea invidunt voluptua. Eos vero eos vero ea et dolore eirmod et. Dolores diam duo invidunt lorem. Elitr ut dolores magna sit. Sea dolore sanctus sed et. Takimata takimata sanctus sed.</p>
+                    <h1 class="  text-black mb-4">We Are A Certified and Award Winning Multipsesilist Hospital You Can Trust</h1>
+                    <p class="text-black mb-0">Eirmod sed tempor lorem ut dolores. Aliquyam sit sadipscing kasd ipsum. Dolor ea et dolore et at sea ea at dolor, justo ipsum duo rebum sea invidunt voluptua. Eos vero eos vero ea et dolore eirmod et. Dolores diam duo invidunt lorem. Elitr ut dolores magna sit. Sea dolore sanctus sed et. Takimata takimata sanctus sed.</p>
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class=" h-100 d-flex flex-column justify-content-center text-center p-5 ">
-                    <h1 class="text-white mb-4">Make Appointment</h1>
+                    <h1 class="text-black mb-4">Make Appointment</h1>
                     <form >
                         <div class="row g-3">
                             <div class="col-12 col-sm-6">
@@ -176,8 +176,18 @@
                                         class="form-control " name="appointment_time">
                                 </div>
                             </div>
+                            <div class="col-md-12 classtext-start">
+                              <span>
+                                <input type="checkbox" name="" id="myCheckbox">
+                              </span>
+                              <span>accept all privecy term</span>
+                              <span type="button" class="text-primary"   data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                               read more
+                              </span>
+
+                            </div>
                             <div class="col-12">
-                                <button class="btn btn-dark w-100 py-3" type="submit">Make Appointment</button>
+                                <button class="btn btn-primary w-100 py-3" id="appointment_btn" disabled type="submit">Make Appointment</button>
                             </div>
                         </div>
                     </form>
@@ -187,6 +197,32 @@
     </div>
 </div>
       <!--  -->
+      <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">PRIVACY POLICY</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <p>Reliance Hospitals are required by law to maintain the privacy of your medical information, to provide you with this written Notice of Privacy Rights and Practices, and to abide by the terms of the Notice currently in effect. This policy shall be applicable to the information collected or displayed on our website. We assure to take the privacy seriously and to keep your privacy and confidentiality of the information provided to us.</p>
+       <p>We shall not intentionally or unless required under laws share the contents of any person with any outside authorities or any third party. We do not guarantee or assure that the electronic communications received from you or contents or records may not be accessible to the third parties.</p>
+       <h5>DATA COLLECTED</h5>
+       <hr>
+       <p>We collect and store anonymous data from every visitor of the Website/application to monitor traffic and fix bugs on our server. For example, we collect information like web requests, the data sent in response to such requests, the Internet Protocol address, the browser type, the browser language, and a timestamp for the request.</p>
+       <P>We may ask you to log in and provide certain personal information (such as your name and email address) in order to be able to save your profile and use the app or website. In order to enable these or any other login based features, we use cookies to store session information for your convenience. In order to request services, you will need to share your personal information including but not limited to your name, email, phone number and other personal information which will be saved on our servers.</P>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="appointment.html"><button type="button" class="btn btn-primary">ACCEPT</button></a>
+      </div>
+    </div>
+  </div>
+</div>
 
     <!-- </section> -->
         <!-- footer start -->
@@ -242,6 +278,19 @@
          <!-- footer end -->
          <script>
             AOS.init();
+          </script>
+            <script>
+              var checkbox = document.getElementById('myCheckbox');
+      
+              checkbox.addEventListener('click', function() {
+                var button= document.getElementById("appointment_btn")
+                  if (checkbox.checked) {
+                      button.disabled = false;
+                  } else {
+                        button.disabled = true;
+
+                  }
+              });
           </script>
         
     
