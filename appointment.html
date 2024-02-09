@@ -79,7 +79,9 @@
                           <a class="nav-link" href="contact.html">contact</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="appointment.html">Appointment</a>
+                          <a class="nav-link" href="appointment.html">
+                            <button class="btn btn-primary">Appointment</button>
+                          </a>
                         </li>
                         <!-- <li class="nav-item dropdown">
                           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -221,7 +223,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <a href="appointment.html"><button type="button" onclick="privacy()" class="btn btn-primary">ACCEPT</button></a>
+        <button type="button" onclick="privacy()" class="btn btn-primary">ACCEPT</button>
       </div>
     </div>
   </div>
@@ -294,9 +296,19 @@
 
                   }
               });
-              function privacy(){
-              var checkboxes = document.getElementById('myCheckbox');
-              checkboxes.clicked=true;
+            
+          </script>
+          <script>
+            function privacy(){
+                var checkbox = document.getElementById('myCheckbox');
+                checkbox.value="on"
+                // var modal= document.getElementById('staticBackdrop');
+                // modal.dispatchEvent(new Event('hide.bs.modal'))
+
+                // modal.style.data-bs-dismiss;
+                // console.log(checkbox)
+              //  document.getElementById('myCheckbox').value="checked";
+              // checkbox.clicked=true;
 
 
               }
