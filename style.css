@@ -14,12 +14,12 @@
     font-weight: bold;
     color: rgb(61, 56, 56);
 }
- .hover{
+ /* .hover{
     display: none;
 }
  img:hover .hover{
     display: inline-block;
-}
+} */
 /* navbaar end */
 .fm{
     font-family: 'Protest Revolution', sans-serif;
